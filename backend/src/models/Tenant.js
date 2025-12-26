@@ -47,6 +47,6 @@ const TenantSchema = new mongoose.Schema(
    INDEXES
 ========================= */
 
-TenantSchema.index({ subdomain: 1 }, { unique: true });
+// TenantSchema.index({ subdomain: 1 }, { unique: true });
 
 export default mongoose.model('Tenant', TenantSchema);

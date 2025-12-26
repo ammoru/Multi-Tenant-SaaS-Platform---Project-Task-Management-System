@@ -22,10 +22,12 @@ app.use(express.urlencoded({ extended: true }));
 
 // CORS (Docker + Local Safe)
 app.use(
-  cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-    credentials: true,
-  })
+  cors(
+  //   {
+  //   origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  //   credentials: true,
+  // }
+)
 );
 
 // Logger
